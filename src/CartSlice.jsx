@@ -26,7 +26,7 @@ export const CartSlice = createSlice({
       if(existItem){
         existItem.quantity = qty;
       }else{
-        state.items.push({...existItem, quantity: qty});
+        state.items.push({...toUpdateItem, quantity: qty});
       }
     },
   },
